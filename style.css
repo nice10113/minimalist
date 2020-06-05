@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lexend Tera", sans-serif;
+  background: #000;
+  color: #fff;
+}
+.section-title {
+  margin: 60px auto;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.navbar-toggler {
+  font-size: 3em;
+  cursor: pointer;
+  z-index: 3;
+  position: fixed;
+  top: 10px;
+  right: 50%;
+  display: none;
+}
+@media (max-width: 985px) {
+  .navbar-toggler {
+    display: block;
+  }
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/Cell.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.header nav {
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+.header nav .logo {
+  color: #fff;
+  cursor: pointer;
+  flex: 0.8;
+  z-index: 2;
+}
+.header nav .logo span {
+  color: grey;
+}
+.header nav ul {
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.header nav ul a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.header nav ul a:hover {
+  background: grey;
+  transition: 0.5s;
+}
+.header nav ul a li {
+  padding: 20px;
+}
+.header .header-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .header-content h1 {
+  font-size: 3em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.header .header-content p {
+  margin: 20px auto;
+  font-size: 1.5em;
+}
+.header .header-content .learn-more-btn {
+  padding: 15px 30px;
+  cursor: pointer;
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 2px solid #fff;
+  margin: 20px auto;
+  text-decoration: none;
+}
+.header .header-content .learn-more-btn:hover {
+  background: grey;
+  transition: 0.5s;
+  border-color: gray;
+}
+@media (max-width: 985px) {
+  nav .logo {
+    font-size: 3.8em;
+    z-index: 1;
+  }
+  nav ul {
+    flex-direction: column;
+    max-height: 0px;
+  }
+  nav ul a:hover {
+    background: none !important;
+    color: grey;
+  }
+  nav ul a li {
+    text-align: center;
+  }
+  .show-nav {
+    max-height: 20em;
+  }
+}
+.wrapper {
+  max-width: 70%;
+  margin: 40px auto;
+}
+.wrapper #about h1 {
+  text-align: center;
+}
+.wrapper #about .about-container {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrapper #about .about-container .about-img {
+  width: 50%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/cell3.jpg") center no-repeat;
+  background-size: cover;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+.wrapper #about .about-container p {
+  width: 60%;
+  margin: 0 40px;
+}
+@media (max-width: 1200px) {
+  .wrapper #about .about-container {
+    flex-direction: column;
+  }
+  .wrapper #about .about-container .about-img {
+    width: 100%;
+  }
+  .wrapper #about .about-container p {
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
+#gallery .gallery-container .card {
+  text-align: center;
+}
+#gallery .gallery-container .card .img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+}
+#gallery .gallery-container .card .img1 {
+  background: url("images/jungle10.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img2 {
+  background: url("images/jungle12.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img3 {
+  background: url("images/jungle7.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img4 {
+  background: url("images/jungle8.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img5 {
+  background: url("images/jungle9.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card .img6 {
+  background: url("images/waterfall1.jpg") center no-repeat;
+  background-size: cover;
+}
+#gallery .gallery-container .card h3 {
+  margin: 30px auto;
+  text-transform: uppercase;
+  border-bottom: 2px solid gray;
+  width: 30%;
+  padding-bottom: 20px;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+#gallery .gallery-container .card p {
+  margin: 50px auto;
+  text-align: left;
+  width: 80%;
+}
+@media (max-width: 900px) {
+  #gallery .gallery-container .card h3 {
+    width: 100%;
+  }
+  #gallery .gallery-container .card p {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+footer {
+  background: #0f0c08;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+footer .footer-container {
+  text-align: center;
+  width: 40%;
+  margin-left: 20px;
+}
+footer .footer-container h1 {
+  font-size: 3em;
+  letter-spacing: 4px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+footer .footer-container h1 span {
+  color: gray;
+}
+footer .footer-container p {
+  margin: 50px auto;
+}
+footer .footer-container .border-bottom {
+  margin: 50px auto;
+}
+footer .footer-container .social-media i {
+  font-size: 3em;
+  margin: 0 40px;
+  cursor: pointer;
+}
+@media (max-width: 875px) {
+  footer {
+    height: auto;
+  }
+  footer .footer-container {
+    margin: 20px auto;
+  }
+  footer .footer-container .social-media {
+    display: flex;
+    justify-content: center;
+  }
+}
